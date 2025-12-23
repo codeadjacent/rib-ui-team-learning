@@ -1,0 +1,24 @@
+{
+	"name": "rib-ui-team-learning",
+	"version": "1.0.0",
+	"description": "Root for learning projects",
+	"scripts": {
+		"lint": "eslint .",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@angular-eslint/eslint-plugin": "^21.1.0",
+		"@angular-eslint/template-parser": "^21.1.0",
+		"@typescript-eslint/eslint-plugin": "^8.50.1",
+		"@typescript-eslint/parser": "^8.50.1",
+		"angular-eslint": "^21.1.0",
+		"eslint": "^9.39.2",
+		"husky": "^9.1.7",
+		"prettier": "^3.7.4",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.50.1"
+	},
+	"private": true
+}
