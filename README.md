@@ -54,11 +54,13 @@ To ensure a high-quality codebase, we enforce linting and formatting rules acros
 3.  Add your code, exercises, or project files within your personal directory.
 4.  Commit your changes and create a PR to `main`.
 
-## Conventions
+## Relevante dos
 
-| Convention             | Description               | Link                                             |
-| :--------------------- | :------------------------ | :----------------------------------------------- |
-| **Naming Conventions** | General rules for naming. | [naming_conventions.md](./naming_conventions.md) |
+| Doc                    | Description                     | Link                                             |
+| :--------------------- | :------------------------------ | :----------------------------------------------- |
+| **Naming Conventions** | General rules for naming.       | [naming_conventions.md](./naming_conventions.md) |
+| **Contributing**       | General rules for contributing. | [contributing.md](./CONTRIBUTING.md)             |
+| **Changelog**          | General rules for changelog.    | [changelog.md](./CHANGELOG.md)                   |
 
 ## Topics & Projects
 
