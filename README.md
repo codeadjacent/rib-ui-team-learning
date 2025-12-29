@@ -32,9 +32,11 @@ The repository is organized by **Topic**, then **Project**, and finally by **Per
 
 We follow a **Trunk-Based Development** workflow:
 
-- All Pull Requests (PRs) should be made directly against the `main` branch.
+- PR are not mandatory, you can push to main if
+    - you did only changes in your own folder
+    - Someone did a peer programming or review with you
+    - if you do a PR, follow the general rules for PRs (e.g. PR Description and Changelog)
 - Small, frequent updates are encouraged.
-- Code changes within your own space can be merged by yourself, but must follow general rules for PRs (e.g. PR Description and Changelog)
 
 ### Clean Code & Standards
 
