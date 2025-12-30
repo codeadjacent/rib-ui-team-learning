@@ -58,7 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
----------------------------------------------------------------------------------------------
+---
 
 Time tracker
 
@@ -89,4 +89,3 @@ Duraiton 8h 51min
 - [ ] Section 41: Bonus: Using NgRx For State Management
 - [ ] Section 45: Angular as a Platform & Closer Look at the CLI
 - [ ] Section 46: Bonus: TypeScript Introduction (for Angular 2 Usage)
-
