@@ -93,4 +93,3 @@ Duraiton 8h 51min
 - [ ] Section 41: Bonus: Using NgRx For State Management
 - [ ] Section 45: Angular as a Platform & Closer Look at the CLI
 - [ ] Section 46: Bonus: TypeScript Introduction (for Angular 2 Usage)
-
