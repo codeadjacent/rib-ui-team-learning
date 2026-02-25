@@ -9,24 +9,27 @@ import { TasksService } from '../tasks.service';
   styleUrl: './new-task.scss',
 })
 export class NewTaskComponent {
-  @Input({required: true}) userId!: string;
+  @Input({ required: true }) userId!: string;
   @Output() cancelAddTask = new EventEmitter<void>();
   enteredTitle = '';
   enteredSummary = '';
   enteredDueDate = '';
   private taskService = inject(TasksService);
 
-  onCancel(){
+  onCancel() {
     this.cancelAddTask.emit();
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log('New Task: ' + this.enteredTitle);
-    this.taskService.addTask({
-      title: this.enteredTitle,
-      summary: this.enteredSummary,
-      dueDate: this.enteredDueDate
-    }, this.userId);
+    this.taskService.addTask(
+      {
+        title: this.enteredTitle,
+        summary: this.enteredSummary,
+        dueDate: this.enteredDueDate,
+      },
+      this.userId,
+    );
     this.cancelAddTask.emit();
   }
 }

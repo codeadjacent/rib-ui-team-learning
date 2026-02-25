@@ -10,20 +10,19 @@ import { Tasks } from './tasks/tasks';
   imports: [RouterOutlet, Header, UserComponent, Tasks],
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  standalone: true, 
+  standalone: true,
 })
 export class App {
   // protected readonly title = signal('anjali');
   user = DUMMY_USERS;
   selectedUser?: string;
 
-  onUserSelected(id: string){
+  onUserSelected(id: string) {
     console.log('Selected user id: ' + id);
     this.selectedUser = id;
   }
 
-  get selectedUserName(){
-    return this.user.find(u => u.id === this.selectedUser)?.name || '';
-
+  get selectedUserName() {
+    return this.user.find((u) => u.id === this.selectedUser)?.name || '';
   }
 }

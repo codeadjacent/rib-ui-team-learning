@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { NewTaskData } from '../task-list/task-list.model';
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 export class TasksService {
   private tasks = [
     {
@@ -27,11 +27,10 @@ export class TasksService {
     },
   ];
 
-
   constructor() {
     const tasks = localStorage.getItem('tasks');
-    if(tasks){
-        this.tasks = JSON.parse(tasks);
+    if (tasks) {
+      this.tasks = JSON.parse(tasks);
     }
   }
 
@@ -55,7 +54,7 @@ export class TasksService {
     this.saveTasks();
   }
 
-  private saveTasks(){
+  private saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 }

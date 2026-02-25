@@ -11,26 +11,24 @@ import { TasksService } from './tasks.service';
   standalone: true,
 })
 export class Tasks {
-
-  @Input({required: true}) name!: string;
-  @Input({required: true}) userId!: string;
+  @Input({ required: true }) name!: string;
+  @Input({ required: true }) userId!: string;
   isAddingTask = false;
   private taskService = inject(TasksService);
 
-
-  get selectedUserTasks(){
+  get selectedUserTasks() {
     return this.taskService.getUserTasks(this.userId);
   }
 
-  onComplete(id: string){
+  onComplete(id: string) {
     this.taskService.removeTask(id);
   }
 
-  onStartAddTask(){
+  onStartAddTask() {
     this.isAddingTask = true;
   }
 
-  onCancelAddTask(){
+  onCancelAddTask() {
     this.isAddingTask = false;
   }
 }

@@ -9,11 +9,10 @@ import { DatePipe } from '@angular/common';
   styleUrl: './task-list.scss',
 })
 export class TaskListComponent {
-  @Input ({required:true}) task!: TaskListItem;
+  @Input({ required: true }) task!: TaskListItem;
   @Output() taskSelected = new EventEmitter<string>();
 
-  onTaskComplete(){
+  onTaskComplete() {
     this.taskSelected.emit(this.task.id);
   }
-
 }
